@@ -1,0 +1,144 @@
+﻿@model ViewModels.TransactionVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-success"><i class="fa fa-comment-dollar"></i> Transaction History</h1>
+
+<div class="row">
+    <div class="col-md-9">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AccountNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BeneficiaryName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BankName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SWIFTCode)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Amount)
+                    </th>
+                    <th>
+                        <a onclick="ShowInPopup('@Url.Action("CreateOrEdit","Transaction",null,Context.Request.Scheme)','New Transaction')"
+                            class="btn btn-success float-end"><i class="fa fa-random"></i> New
+                            Transaction</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Transactions != null)
+                {
+
+                    @foreach (var item in Model.Transactions)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.AccountNumber)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.BeneficiaryName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.BankName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SWIFTCode)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Amount)
+                            </td>
+                            <td>
+                                <div class="float-end">
+                                    <a asp-action="CreateOrEdit" class="btn btn-outline-secondary" asp-route-id="@item.Id"><i
+                                    class="fas fa-plus-circle"></i> Add</a>
+                                    |
+                                    <a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@item.Id"><i
+                                    class="fas fa-trash"></i> Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <h1>No data</h1>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-3">
+        <form asp-action="CreateOrEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group mb-3">
+                <label asp-for="AccountNumber" class="control-label"></label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            #
+                        </div>
+                    </div>
+                    <input asp-for="AccountNumber" class="form-control" />
+                </div>
+                <span asp-validation-for="AccountNumber" class="text-danger"></span>
+            </div>
+            <div class="row mb-3">
+                <div class="col col-md-6">
+                    <div class="form-group">
+                        <label asp-for="BeneficiaryName" class="control-label"></label>
+                        <input asp-for="BeneficiaryName" class="form-control" />
+                        <span asp-validation-for="BeneficiaryName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col col-md-6">
+                    <div class="form-group">
+                        <label asp-for="BankName" class="control-label"></label>
+                        <input asp-for="BankName" class="form-control" />
+                        <span asp-validation-for="BankName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col col-md-6">
+                    <div class="form-group">
+                        <label asp-for="SWIFTCode" class="control-label"></label>
+                        <input asp-for="SWIFTCode" class="form-control" />
+                        <span asp-validation-for="SWIFTCode" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Amount" class="control-label"></label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    $
+                                </div>
+                            </div>
+                            <input asp-for="Amount" class="form-control" />
+                        </div>
+                        <span asp-validation-for="Amount" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success form-control" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts{
+<partial name="_ValidationScriptsPartial" />
+}
