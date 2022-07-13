@@ -9869,24 +9869,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sailesh Rijal\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Sailesh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AliveCoder\\Dotnet\\AjaxMVC\\AjaxMVC\\AjaxMVC.csproj",
+      "projectUniqueName": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\crud-in-single-razor-view\\AjaxMVC.csproj",
       "projectName": "AjaxMVC",
-      "projectPath": "D:\\AliveCoder\\Dotnet\\AjaxMVC\\AjaxMVC\\AjaxMVC.csproj",
-      "packagesPath": "C:\\Users\\Sailesh Rijal\\.nuget\\packages\\",
-      "outputPath": "D:\\AliveCoder\\Dotnet\\AjaxMVC\\AjaxMVC\\obj\\",
+      "projectPath": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\crud-in-single-razor-view\\AjaxMVC.csproj",
+      "packagesPath": "C:\\Users\\Sailesh\\.nuget\\packages\\",
+      "outputPath": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\crud-in-single-razor-view\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Sailesh Rijal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Sailesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9955,7 +9950,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

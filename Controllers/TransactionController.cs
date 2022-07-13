@@ -21,16 +21,27 @@ namespace AjaxMVC.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int id)
         {
             if (_context.Transactions == null)
             {
                 return NotFound();
             }
+
             var transactionVM = new TransactionVM
             {
                 Transactions = await _context.Transactions.ToListAsync()
             };
+            if (id > 0)
+            {
+                var ExistingTransaction = await _context.Transactions.FirstOrDefaultAsync(x => x.Id == id);
+                transactionVM.Id = ExistingTransaction.Id;
+                transactionVM.AccountNumber = ExistingTransaction.AccountNumber;
+                transactionVM.BeneficiaryName = ExistingTransaction.BeneficiaryName;
+                transactionVM.BankName = ExistingTransaction.BankName;
+                transactionVM.SWIFTCode = ExistingTransaction.SWIFTCode;
+                transactionVM.Amount = ExistingTransaction.Amount;
+            }
             return View(transactionVM);
         }
 

@@ -26,11 +26,15 @@
                     <th>
                         @Html.DisplayNameFor(model => model.Amount)
                     </th>
-                    <th>
-                        <a onclick="ShowInPopup('@Url.Action("CreateOrEdit","Transaction",null,Context.Request.Scheme)','New Transaction')"
-                            class="btn btn-success float-end"><i class="fa fa-random"></i> New
-                            Transaction</a>
+                    <th class="text-end">
+                        Actions
                     </th>
+                    @* <th>
+                        <a onclick="ShowInPopup('@Url.Action("CreateOrEdit","Transaction",null,Context.Request.Scheme)','New
+                        Transaction')"
+                        class="btn btn-success float-end"><i class="fa fa-random"></i> New
+                        Transaction</a>
+                        </th> *@
                 </tr>
             </thead>
             <tbody>
@@ -57,8 +61,8 @@
                             </td>
                             <td>
                                 <div class="float-end">
-                                    <a asp-action="CreateOrEdit" class="btn btn-outline-secondary" asp-route-id="@item.Id"><i
-                                    class="fas fa-plus-circle"></i> Add</a>
+                                    <a asp-action="Index" class="btn btn-outline-secondary" asp-route-id="@item.Id"><i
+                                    class="fas fa-pencil"></i> Edit</a>
                                     |
                                     <a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@item.Id"><i
                                     class="fas fa-trash"></i> Delete</a>
