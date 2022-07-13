@@ -50,30 +50,6 @@
         </main>
     </div>
 
-
-    @* Modal starts *@
-
-    <div class="modal" tabindex="-1" id="form-modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p></p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    @* Modal ends*@
-
-
-
-
-
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - Sing Page Crud - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -81,7 +57,6 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    @* <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
