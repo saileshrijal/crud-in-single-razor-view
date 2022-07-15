@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "giYyFrOQfRUQ6SWNo3MCPwfGhg9y6Fm5dmaHjj56H8WyqPy2/2b9SmkGEZLUxW9OdbRMU591GW8Emdw6X8+Jwg==",
+  "dgSpecHash": "7C2emMSyBftE1bTDEmk2nYZAEVXjUI5Zv0Mv06SAaSNSq3B81AYlhb6t61gfbidDKC21UjOONPmRZvji1FPC9A==",
   "success": true,
-  "projectFilePath": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\Single Page Crud\\AjaxMVC.csproj",
+  "projectFilePath": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\Single Page Crud\\SinglePageCrud.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sailesh\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sailesh\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

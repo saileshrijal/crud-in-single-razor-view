@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Models;
 
-namespace AjaxMVC.Data;
+namespace SinglePageCrud.Data;
 
 public class ApplicationDbContext : IdentityDbContext
 {

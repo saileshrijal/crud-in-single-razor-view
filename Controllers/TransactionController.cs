@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using AjaxMVC.Data;
+using SinglePageCrud.Data;
 using ViewModels;
 using Models;
 
@@ -35,12 +35,19 @@ namespace AjaxMVC.Controllers
             if (id > 0)
             {
                 var ExistingTransaction = await _context.Transactions.FirstOrDefaultAsync(x => x.Id == id);
-                transactionVM.Id = ExistingTransaction.Id;
-                transactionVM.AccountNumber = ExistingTransaction.AccountNumber;
-                transactionVM.BeneficiaryName = ExistingTransaction.BeneficiaryName;
-                transactionVM.BankName = ExistingTransaction.BankName;
-                transactionVM.SWIFTCode = ExistingTransaction.SWIFTCode;
-                transactionVM.Amount = ExistingTransaction.Amount;
+                if (ExistingTransaction != null)
+                {
+                    transactionVM.Id = ExistingTransaction.Id;
+                    transactionVM.AccountNumber = ExistingTransaction.AccountNumber;
+                    transactionVM.BeneficiaryName = ExistingTransaction.BeneficiaryName;
+                    transactionVM.BankName = ExistingTransaction.BankName;
+                    transactionVM.SWIFTCode = ExistingTransaction.SWIFTCode;
+                    transactionVM.Amount = ExistingTransaction.Amount;
+                }
+                else
+                {
+                    return NotFound();
+                }
             }
             return View(transactionVM);
         }

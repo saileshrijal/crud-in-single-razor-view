@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using AjaxMVC.Data;
+using SinglePageCrud.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

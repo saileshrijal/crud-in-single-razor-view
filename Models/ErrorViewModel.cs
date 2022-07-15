@@ -1,4 +1,4 @@
-namespace AjaxMVC.Models;
+namespace SinglePageCrud.Models;
 
 public class ErrorViewModel
 {
