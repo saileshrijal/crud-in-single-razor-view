@@ -8,41 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AjaxMVC
 build_property.RootNamespace = AjaxMVC
-build_property.ProjectDir = D:\AliveCoder\Dotnet MVC Projects\SIngle Page CRUD\crud-in-single-razor-view\
+build_property.ProjectDir = d:\AliveCoder\Dotnet MVC Projects\SIngle Page CRUD\Single Page Crud\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\AliveCoder\Dotnet MVC Projects\SIngle Page CRUD\crud-in-single-razor-view
+build_property.MSBuildProjectDirectory = d:\AliveCoder\Dotnet MVC Projects\SIngle Page CRUD\Single Page Crud
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/crud-in-single-razor-view/Views/Home/Index.cshtml]
+[d:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/Single Page Crud/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/crud-in-single-razor-view/Views/Home/Privacy.cshtml]
+[d:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/Single Page Crud/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/crud-in-single-razor-view/Views/Shared/Error.cshtml]
+[d:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/Single Page Crud/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/crud-in-single-razor-view/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/Single Page Crud/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/crud-in-single-razor-view/Views/Transaction/Index.cshtml]
+[d:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/Single Page Crud/Views/Transaction/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/crud-in-single-razor-view/Views/_ViewImports.cshtml]
+[d:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/Single Page Crud/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/crud-in-single-razor-view/Views/_ViewStart.cshtml]
+[d:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/Single Page Crud/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/crud-in-single-razor-view/Views/Shared/_Layout.cshtml]
+[d:/AliveCoder/Dotnet MVC Projects/SIngle Page CRUD/Single Page Crud/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-p2qpjk6dow

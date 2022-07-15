@@ -9874,11 +9874,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\crud-in-single-razor-view\\AjaxMVC.csproj",
+      "projectUniqueName": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\Single Page Crud\\AjaxMVC.csproj",
       "projectName": "AjaxMVC",
-      "projectPath": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\crud-in-single-razor-view\\AjaxMVC.csproj",
+      "projectPath": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\Single Page Crud\\AjaxMVC.csproj",
       "packagesPath": "C:\\Users\\Sailesh\\.nuget\\packages\\",
-      "outputPath": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\crud-in-single-razor-view\\obj\\",
+      "outputPath": "D:\\AliveCoder\\Dotnet MVC Projects\\SIngle Page CRUD\\Single Page Crud\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sailesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
